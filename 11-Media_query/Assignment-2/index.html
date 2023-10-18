@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.container{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		place-items: center;
+		gap: 1rem;
+	}
+
+	@media screen and (max-width:800px) {
+		.container{
+			grid-template-columns: repeat(2,1fr);
+		}
+	}
+	@media screen and (max-width:500px) {
+		.container{
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
+<body>
+	<div class="container">
+		<img src="https://fastly.picsum.photos/id/452/200/300.jpg?hmac=GNRw9M4S7sR7m03kJ-vBNG4vr5gFJpy7T54vSqBA06E" alt="">
+		<img src="https://fastly.picsum.photos/id/452/200/300.jpg?hmac=GNRw9M4S7sR7m03kJ-vBNG4vr5gFJpy7T54vSqBA06E" alt="">
+		<img src="https://fastly.picsum.photos/id/452/200/300.jpg?hmac=GNRw9M4S7sR7m03kJ-vBNG4vr5gFJpy7T54vSqBA06E" alt="">
+		<img src="https://fastly.picsum.photos/id/452/200/300.jpg?hmac=GNRw9M4S7sR7m03kJ-vBNG4vr5gFJpy7T54vSqBA06E" alt="">
+	</div>
+</body>
+</html>

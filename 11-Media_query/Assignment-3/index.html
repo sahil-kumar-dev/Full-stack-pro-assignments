@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	ul{
+		display: flex;
+		justify-content: space-around;
+		padding: 10px 0;
+		background-color: black;
+	}
+	li{
+		list-style: none;
+		color: white;
+	}
+
+	@media screen and (max-width:768px) {
+		ul{
+			flex-direction: column;
+			text-align: center;
+			background-color: rgb(124, 124, 124);
+		}
+		li{
+			padding: 10px 0;
+		}
+	}
+</style>
+<body>
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+		<li>Service</li>
+		<li>Portfolio</li>
+		<li>Contact</li>
+	</ul>
+</body>
+</html>
