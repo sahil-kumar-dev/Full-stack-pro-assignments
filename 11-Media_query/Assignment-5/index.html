@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.container{
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.box{
+		padding: 10px 0;
+	}
+	.box-1{
+		background-color: darkslategrey;
+	}
+	.box-2{
+		background-color: aqua;
+	}
+	.box-3{
+		background-color: chartreuse;
+	}
+	.box-4{
+		margin-top: auto;
+		background-color:darkslategrey ;
+	}
+	@media screen and (min-width:468px) {
+		.container{
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.inner-container{
+			width: 100%;
+		}
+		.box-2,.box-3{
+			height: 50vh;
+		}
+		.box-4{
+			margin-top: 0;
+		}
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="box box-1">Box 1</div>
+		<div class="inner-container">
+			<div class="box box-2">Box 2</div>
+			<div class="box box-3">Box 3</div>
+		</div>
+		<div class="box box-4">Box 4</div>
+	</div>
+</body>
+</html>
