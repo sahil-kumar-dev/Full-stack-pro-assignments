@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.container{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		gap: 10px;
+		justify-items: center;
+		/* justify-self applies to all the content inside it */
+	}
+	.container>div{
+		background-color: bisque;
+		border: 2px solid black;
+	}
+	.box1{
+		justify-self: start;
+		/* Justify self apply to the individual elemnet and it justify itself individually */
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="box1">box 1</div>
+		<div class="box2">box 2</div>
+		<div class="box3">box 3</div>
+		<div class="box4">box 4</div>
+		<div class="box5">box 5</div>
+		<div class="box6">box 6</div>
+	</div>
+</body>
+</html>
