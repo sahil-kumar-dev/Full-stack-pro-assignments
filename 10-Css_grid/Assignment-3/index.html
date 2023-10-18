@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.container {
+		display: grid;
+		grid-template-areas: "X X";
+		grid-template-rows: 50px;
+		grid-auto-rows: 200px;
+	}
+
+	.container>div {
+		border: 1px solid black;
+		background-color: bisque;
+		padding: 5px;
+	}
+</style>
+
+<body>
+	<!-- grid-auto-rows and grid-auto-column properties specify the height and width of rows that are automatically
+	created when there is no explicit row definition and column definition respectively. -->
+	<div class="container">
+		<div>Item 1</div>
+		<div>Item 2</div>
+		<div>Item 3</div>
+		<div>Item 4</div>
+	</div>
+</body>
+
+</html>
