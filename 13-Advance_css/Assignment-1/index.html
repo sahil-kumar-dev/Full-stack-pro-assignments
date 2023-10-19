@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button</title>
+</head>
+<style>
+	:root{
+		--primaryColor:#00b7ff;
+		--secondaryColor:#6c757d;
+	}
+
+	button{
+		color: white;
+		padding: 5px 10px;
+		outline: none;
+		border: 2px solid white;
+	}
+	#primaryBtn{
+		background-color: var(--primaryColor);
+	}
+	#secondaryBtn{
+		background-color: var(--secondaryColor);
+	}
+</style>
+<body>
+	<!-- Question: Explain the purpose of using the var() function in css?
+	Answer: The main purpose of using var in css that if want to use a specific properties multiple times,like color values
+	height, width, font-size, box-shadow then we don't have to write the values every time, we should just declare it in the
+	root element using a meaningful name and use it everywhere, and when we have to change the the properties of all element 
+	we will just update in the root.  -->
+	<button id="primaryBtn">Primary Button</button>
+	<button id="secondaryBtn">Secondary Button</button>
+</body>
+</html>

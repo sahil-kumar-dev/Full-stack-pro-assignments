@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loader</title>
+</head>
+<style>
+	body{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		overflow: hidden;
+	}
+	.loader{
+		height: 50px;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		border: 8px solid #d2cccc;
+		border-bottom:8px solid #4848f2;
+		animation: rotate 1s infinite linear forwards;
+	}
+
+	/* Added roatating animation */
+	@keyframes rotate {
+		to{
+			transform: rotate(360deg);
+		}
+	}
+</style>
+<body>
+	<!-- This is the loader -->
+	<div class="loader"></div>
+</body>
+</html>
