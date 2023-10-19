@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+
+	body{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		overflow: hidden;
+	}
+	/* Added button styling */
+	.btn{
+		padding: 10px 15px;
+		background-color: #75abee;
+		color: white;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+		transition: box-shadow 0.1s;
+	}
+	/* Added properties when button is hovered */
+	.btn:hover{
+		cursor: pointer;
+		box-shadow: 10px 5px 10px black;
+	}
+
+	/* Added content using pseudo class */
+	.btn::after{
+		content: 'PW Skills';
+	}
+</style>
+<body>
+	<!-- Html button  -->
+	<button class="btn"></button>
+</body>
+</html>

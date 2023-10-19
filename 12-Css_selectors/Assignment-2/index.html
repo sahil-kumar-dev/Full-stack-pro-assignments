@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	/* Removed list all styles use decendant selector  */
+	ul>li>a{
+		text-decoration: none;
+	}
+	
+	/* Using child combinator change the diplay property */
+	ul>li{
+		list-style: none;
+		display: inline;
+	}
+	
+	/* Using adjacent sibling selector added margin between them */
+	li+li{
+		margin: 10px 10px;
+	}
+</style>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
