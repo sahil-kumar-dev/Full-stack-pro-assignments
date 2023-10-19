@@ -10,6 +10,8 @@
 		margin: 0;
 		padding: 0;
 	}
+
+	/* By default li items will in one row  */
 	ul{
 		display: flex;
 		justify-content: space-around;
@@ -21,6 +23,7 @@
 		color: white;
 	}
 
+	/* Added responsive css for screen width less than 768px , li items will align in one column */
 	@media screen and (max-width:768px) {
 		ul{
 			flex-direction: column;

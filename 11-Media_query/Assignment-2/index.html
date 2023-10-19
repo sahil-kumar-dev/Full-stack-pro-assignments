@@ -6,6 +6,8 @@
 	<title>Document</title>
 </head>
 <style>
+
+	/* Styling for large displays */
 	.container{
 		display: grid;
 		grid-template-columns: repeat(3,1fr);
@@ -13,11 +15,15 @@
 		gap: 1rem;
 	}
 
+	/* Stying for screen size between 500px and 800px  */
+
 	@media screen and (max-width:800px) {
 		.container{
 			grid-template-columns: repeat(2,1fr);
 		}
 	}
+
+	/* styling for screen size less or equal to 500 */
 	@media screen and (max-width:500px) {
 		.container{
 			grid-template-columns: 1fr;
