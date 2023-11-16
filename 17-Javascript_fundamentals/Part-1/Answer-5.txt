@@ -1,2 +1,0 @@
-
-Comments in JavaScript are essential for making code more readable, understandable, and maintainable. They provide information about the purpose and functionality of the code, aiding both the original developer and others who may work on or review the code.

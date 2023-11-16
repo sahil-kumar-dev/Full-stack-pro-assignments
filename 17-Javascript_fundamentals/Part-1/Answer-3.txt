@@ -1,3 +1,8 @@
+Question: List and describe the five primitive data types in JavaScript.
+
+
+Answer:
+
 JavaScript has several primitive data types that are used to represent simple values. Here are five of them:
 
 Number:
